@@ -1,0 +1,666 @@
+/*Carrito Index*/
+
+#carrito img {
+    width: auto;
+    height: 20px;
+}
+
+
+/*Barra social*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra_social {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+
+.barra_social ul {
+    list-style: none;
+}
+
+.barra_social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.barra_social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.barra_social ul li .icon-whatsapp {
+    background: #43d854;
+}
+
+.barra_social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.barra_social ul li .icon-instagram {
+    background: #833ab4;
+}
+
+.barra_social ul li .icon-google-plus {
+    background: red;
+}
+
+.barra_social ul li .icon-mail {
+    background: #46bc99;
+}
+
+.barra_social ul li a:hover {
+    padding: 10px 30px;
+}
+
+div#agrupar header,
+div#agrupar section,
+div#agrupar aside,
+div#agrupar nav,
+div#agrupar blockquote,
+div#agrupar div,
+div#agrupar figure {
+    display: block;
+}
+
+div#agrupar aside {
+    height: fit-content;
+    width: fit-content;
+    font-size: 3vh;
+}
+
+div#agrupar form {
+    display: block;
+    height: 100%;
+    width: 100vw;
+    padding: 4vh;
+    padding-left: 10vw;
+    margin: auto;
+    background-image: url(..\\IMAGENES\\fondo_index.jpg);
+}
+
+div#agrupar form label {
+    width: 70vw;
+    font-weight: bold;
+    display: inline-block;
+}
+
+div#agrupar form input {
+    font-size: 2.5vh;
+}
+
+div#agrupar form input[type="text"],
+div#agrupar form input[type="email"] {
+    width: 76vw;
+    padding: 1vh 3vw;
+    border: 1px solid #000000;
+    background-color: #f6f6f6;
+    margin: 1vh 0;
+    display: inline-block;
+}
+
+div#agrupar form input[type="submit"] {
+    width: 82vw;
+    padding: 0.5vh 1vw;
+    margin-top: 2vh;
+    border: 1vh solid #000;
+    border-radius: 1vw;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+div#agrupar form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+div#agrupar aside div {
+    padding: 1vh;
+}
+
+div#agrupar .container {
+    display: contents;
+    width: 50vw;
+    font-size: 2.5vh;
+}
+
+div#agrupar .container input {
+    height: 2.5vh;
+    width: 2.5vw;
+}
+
+div#agrupar select {
+    width: 77vw;
+    padding: 1vh 3vw;
+    border: 1px solid #000000;
+    background-color: #f6f6f6;
+    margin: 1vh 0;
+    font-size: 2.5vh;
+}
+
+div#agrupar textarea {
+    width: 77vw;
+    height: 11vh;
+    border: 0.3vh solid #636060;
+    border-radius: 3px;
+    margin: 1vh 0;
+    resize: none;
+    font-size: 2.5vh;
+}
+
+div#agrupar form input[type="checkbox"] {
+    height: 2.5vh;
+    width: 2.5vw;
+}
+
+div#agrupar section {
+    height: 25vh;
+    display: flex;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    width: 90%;
+    background: white;
+    margin: auto;
+}
+
+div#agrupar section blockquote {
+    display: inline-block;
+    height: fit-content;
+    width: 25%;
+    border-left: 0px;
+    margin-left: 2vw;
+}
+
+div#agrupar section figure {
+    width: 100%;
+    height: 15vh;
+    display: inline-block;
+    margin: 0%;
+    margin-left: 20%;
+    padding: 0%;
+}
+
+div#agrupar section figure img {
+    width: auto;
+    height: 100%;
+}
+
+div#agrupar section figcaption {
+    font-size: large;
+    text-align: center;
+    width: 95%;
+}
+
+@media (max-width: 800px) {
+    div#agrupar section {
+        column-count: 3;
+        column-gap: 3em;
+        column-width: 140px;
+    }
+    div#agrupar section figcaption {
+        font-size: 2vw;
+        text-align: right;
+        margin-top: 4vw;
+    }
+    div#agrupar section blockquote {
+        padding: 0px;
+        margin: 0px;
+        padding-top: 4vw;
+    }
+    div#agrupar section figure img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 570px) {
+    div#agrupar section blockquote {
+        padding-top: 7vw;
+    }
+    div#agrupar section figcaption {
+        font-size: 2.3vw;
+        text-align: right;
+        margin-top: 0;
+    }
+}
+
+div#agrupar2 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+}
+
+div#agrupar2 section {
+    float: right;
+    width: 65vw;
+    height: 80.5vh;
+    background-image: url(..\\IMAGENES\\fondo_jep.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2vw;
+}
+
+div#agrupar2 header,
+div#agrupar2 aside,
+div#agrupar2 nav,
+div#agrupar2 blockquote,
+div#agrupar2 div,
+div#agrupar2 figure {
+    margin: 0%;
+    padding: 0%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+div#agrupar2 section blockquote {
+    block-size: 50%;
+    margin-top: 5%;
+    margin-left: 32%;
+    margin-right: 20%;
+}
+
+div#agrupar2 section blockquote img {
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+div#agrupar2 section div {
+    text-align: center;
+    block-size: 40%;
+    color: black;
+    font-size: 3.5vw;
+    float: right;
+}
+
+@media (max-width: 900px) {
+    div#agrupar2 section {
+        width: 60vw;
+    }
+    div#agrupar2 section blockquote img {
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+    }
+    div#agrupar2 section blockquote {
+        margin-left: 23%;
+    }
+    div#agrupar2 section div {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    div#agrupar2 section div {
+        font-size: 6vw;
+    }
+    div#agrupar2 section blockquote img {
+        margin-top: 40%;
+    }
+}
+
+div#agrupar2 section h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 60%;
+    width: 100%;
+    height: 20%;
+}
+
+div#agrupar2 section p {
+    font-size: 60%;
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    height: 80%;
+}
+
+div#agrupar2 aside {
+    float: left;
+    width: 30vw;
+    height: fit-content;
+    background-color: white;
+}
+
+div#agrupar2 aside blockquote {
+    border: 1px solid;
+    background: #a2a1a1;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    height: 16.7vh;
+    width: 25vw;
+}
+
+div#agrupar2 aside #chocolate {
+    background-image: url("..\\IMAGENES/historia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+div#agrupar2 aside #chocolate2 {
+    background-image: url("..\\IMAGENES/mision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+div#agrupar2 aside #gomas {
+    background-image: url("..\\IMAGENES/vision.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+div#agrupar2 aside blockquote h1 {
+    font-size: 6vw;
+    padding-top: 1vw;
+    color: white;
+    block-size: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div#agrupar2 aside blockquote :hover {
+    transition: all 0.5s ease;
+    background-color: #3f64e8;
+}
+
+
+/*barra lateral carro*/
+
+
+/*
+#compras {
+    background-color: #222222;
+    display: block;
+    height: 95%;
+    width: 50px;
+    transform: translateX(-420px);
+    transition: all 1s cubic-bezier(.46, .01, .32, .46);
+    top: 10%;
+    padding: 0 24px;
+    position: fixed;
+    z-index: 1000;
+    right: -420px;
+    left: auto;
+    color: #fff;
+    width: 420px;
+    box-sizing: border-box;
+    margin: 0;
+}
+*/
+
+
+/*JEASSON*/
+
+@media only screen and (min-width: 1301px) {
+    footer {
+        background: white;
+        margin: auto;
+        width: 90%;
+        height: 300px;
+        ;
+    }
+    #logo_pie_fig {
+        margin: 0px;
+        float: left;
+        display: grid;
+        grid-template-rows: 70% 30%;
+        width: 25%;
+        height: 95%;
+        border-right: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #nosotros_footer {
+        float: left;
+        width: 25%;
+        height: 95%;
+        margin: 0px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+        border-right: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #ayuda_footer {
+        float: left;
+        width: 25%;
+        height: 95%;
+        margin: 0px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+        border-right: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #siguenos_footer {
+        width: 25%;
+        height: 95%;
+        margin: 0px;
+        ;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+    }
+    #siguenos_imgs {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 100%
+    }
+    .img_foot {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .img_red_foot {
+        width: 100%;
+        height: 100%;
+    }
+    aside {
+        display: grid;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-columns: 100%;
+    }
+    a {
+        margin: auto;
+        color: black;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:hover {
+        color: #2F1693;
+    }
+    .dat_foot {
+        border: none;
+        margin: auto;
+    }
+    #logo_pie_ref {
+        margin: auto;
+        width: 80%;
+        height: 80%;
+    }
+    #logo_pie_img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    #figcaption_pie {
+        text-align: center;
+    }
+    .p_foot {
+        font-size: 1.5em;
+        margin: 7px;
+        ;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    footer {
+        background: white;
+        margin: auto;
+        width: 200px;
+        height: 100%;
+        clear: both
+    }
+    #logo_pie_fig {
+        margin: 10px 0px 0px;
+        display: grid;
+        grid-template-rows: 70% 30%;
+        width: 200px;
+        height: 95%;
+    }
+    #nosotros_footer {
+        width: 200px;
+        height: 95%;
+        margin: 50px 0px 0px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+        border-top: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #ayuda_footer {
+        width: 200px;
+        height: 95%;
+        margin: 10px 0px 0px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+        border-top: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #siguenos_footer {
+        width: 200px;
+        height: 95%;
+        margin: 10px 0px 0px;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 100%;
+        border-top: 2px solid rgba(103, 103, 87, 0.55);
+    }
+    #siguenos_imgs {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 100%
+    }
+    .img_foot {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .img_red_foot {
+        width: 100%;
+        height: 100%;
+    }
+    aside {
+        display: grid;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-columns: 100%;
+    }
+    a {
+        margin: auto;
+        color: black;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:hover {
+        color: cornsilk;
+    }
+    .dat_foot {
+        text-align: center;
+        padding: 0px;
+        border: none;
+        margin: 5px;
+    }
+    #logo_pie_ref {
+        margin: auto;
+        width: 80%;
+        height: 80%;
+    }
+    #logo_pie_img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    #figcaption_pie {
+        text-align: center;
+    }
+    .p_foot {
+        font-size: 1.5em;
+        margin: 7px;
+        ;
+        text-align: center;
+    }
+}
+
+#catalogo {
+    width: auto;
+    height: 472px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 472px;
+}
+
+#chocolate_fig {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+#chocolate_img {
+    border-radius: 30%;
+    box-shadow: grey 9px 9px 3px;
+    width: 100%;
+    height: 96.39065817%;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+#chocolate_img:hover {
+    -webkit-transform: scale(1.05);
+}
+
+figcaption {
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#dulces_fig {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+#dulces_img {
+    border-radius: 30%;
+    box-shadow: grey 9px 9px 3px;
+    width: 100%;
+    height: 96.39065817%;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+
+#dulces_img:hover {
+    -webkit-transform: scale(1.05);
+}
